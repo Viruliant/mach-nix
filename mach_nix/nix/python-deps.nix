@@ -1,8 +1,8 @@
-{python, fetchGit, fetchurl, ...}:
+{python, fetchgit, fetchurl, ...}:
 rec {
   distlib = python.pkgs.buildPythonPackage {
     name = "distlib-0.4.0";
-    src = fetchGit {
+    src = fetchgit {
     url = "https://github.com/pypa/distlib";
     rev = "aff2cbbc4e8a87b9440cb93472789a213813dbd6"; # 0.4.0
   };
@@ -14,7 +14,7 @@ rec {
   };
   resolvelib = python.pkgs.buildPythonPackage {
     name = "resolvelib-1.2.0";
-    src = fetchGit {
+    src = fetchgit {
     url = "https://github.com/sarugaku/resolvelib";
     rev = "50f221ba803f6c127b6e20ff2c9a4470524e1239"; # 1.2.0
   };
@@ -22,7 +22,7 @@ rec {
   };
   tree-format = python.pkgs.buildPythonPackage {
     name = "tree-format-0.1.2";
-    src = fetchGit {
+    src = fetchgit {
     url = "https://github.com/jml/tree-format";
     rev = "922c9d37661dfb884cd45a9a9a2533f5eabe09f5"; # 6yrs unchanged
   };
